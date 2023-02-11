@@ -1,0 +1,60 @@
+import tkinter
+from tkinter import *
+from tkinter import PhotoImage
+import webbrowser
+  
+window = tkinter.Tk() #ayna ashiw
+window.title('Login')
+window.geometry('640x480')
+window.resizable(False, False)
+window.config(bg='#35352B')
+
+
+
+
+img = tkinter.PhotoImage(file = "./tkinter_github/image/github.png")
+imgbx = tkinter.Label(image = img)
+imgbx.place(x=230, y=40)
+
+imgbx['bg'] = '#35352B'
+
+
+
+
+text = tkinter.Label(window)
+text['text'] = 'Username/email:'
+text['font'] = 'Roboto 12 bold'
+text['bg'] = '#35352B'
+text['fg'] = 'white'
+text.place(x=100, y=130)
+
+entry = tkinter.Entry(window)
+entry['width'] = 20
+entry['font'] = 'Roboto 15'
+entry.place(x=150, y=155)
+
+text_1 = tkinter.Label(window)
+text_1['text'] = 'Password:'
+text_1['font'] = 'Roboto 12 bold'
+text_1['bg'] = '#35352B'
+text_1['fg'] = 'white'
+text_1.place(x=100, y=250)
+
+entry_1 = tkinter.Entry(window)
+entry_1['width'] = 20
+entry_1['font'] = 'Roboto 15'
+entry_1.place(x=150, y=275)
+
+button = tkinter.Button(window)
+button['text'] = 'Login'
+button['font'] = 'Roboto 12'
+button['bg'] = 'green'
+button['width'] = 10
+button['fg'] = 'white'
+
+button.place(x=210, y=330)
+
+
+window.mainloop()
+
+
